@@ -1,5 +1,4 @@
 import AbstractView from './Abstractview.js';
-
 export default class extends AbstractView{
     constructor(){
         super();
@@ -8,29 +7,36 @@ export default class extends AbstractView{
     }
     async getHtml(){
         return `
-            <header>
-                <h1>Dashboard</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#" onclick="loadContent('home')">Home</a></li>
-                        <li><a href="#" onclick="loadContent('analytics')">Analytics</a></li>
-                        <li><a href="#" onclick="loadContent('settings')">Settings</a></li>
-                        <li><a href="#" onclick="loadContent('profile')">Profile</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <header>
+            <h1>Dashboard</h1>
+        </header>
 
-            <main id="content">
-                <section class="card">
-                    <h2>Welcome to the Dashboard</h2>
-                    <p>This is a simple dashboard for your application.</p>
-                </section>
-            </main>
-            <a href="/posts" data-link>View recent posts</a>
+        <main id="content">
+            <section class="dashboard">
+                <h2>Welcome to the Dashboard</h2>
+                <div class="card">
+                    <h3>Analytics Overview</h3>
+                    <p>Check your analytics and insights.</p>
+                </div>
+                <div class="card">
+                    <h3>User Activity</h3>
+                    <p>View user activities and engagement metrics.</p>
+                </div>
+                <div class="card">
+                    <h3>Manage Posts</h3>
+                    <p><a href="/posts" data-link class="btn">View Posts</a></p>
+                </div>
+                <div class="card">
+                    <h3>Settings</h3>
+                    <p><a href="/settings" data-link class="btn">Go to Settings</a></p>
+                </div>
+            </section>
+        </main>
 
-            <footer>
-                <p>&copy; 2024 Simple SPA Dashboard</p>
-            </footer>
-        `;
+        <footer>
+            <p>&copy; 2024 Simple SPA Dashboard</p>
+        </footer>
+    `;
+
     }
 }

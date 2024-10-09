@@ -1,0 +1,164 @@
+/* styles.css */
+/* Stili për navbar */
+.nav {
+    position: fixed;          /* E mban të ngulitur në ekran gjatë scroll-it */
+    top: 0;                   /* Fillon nga maja e faqes */
+    right: 0;                 /* Vendos në anën e djathtë */
+    height: 100vh;            /* Zë tërë lartësinë e faqes */
+    width: 200px;             /* Gjerësia e sidebar-it */
+    background-color: #333;   /* Ngjyra e sfondit */
+    display: flex;
+    flex-direction: column;   /* Rreshton linket një mbi tjetrin */
+    padding-top: 20px;        /* Pak hapësirë nga maja */
+}
+
+.nav__link {
+    color: white;              /* Ngjyra e tekstit */
+    text-decoration: none;      /* Hiq nënvizimin e linkut */
+    padding: 10px 15px;        /* Hapësirë rreth linkut */
+    font-size: 18px;           /* Madhësia e tekstit */
+    transition: background-color 0.3s ease; /* Efekti i butë gjatë hover */
+}
+
+.nav__link:hover {
+    background-color: #555;    /* Ndrysho ngjyrën kur kalon miu mbi link */
+    border-radius: 5px;        /* Këndet e rrumbullakosura */
+}
+
+/* Dashboard CSS */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Siguron që trupi të zërë tërë lartësinë e dritares */
+}
+
+header {
+    background-color: #333; /* Ngjyra e sfondit të header-it */
+    color: white; /* Ngjyra e tekstit në header */
+    padding: 10px; /* Hapësira brenda header-it */
+}
+
+main {
+    flex: 1; /* Kjo do ta bëjë këtë div të zërë hapësirën e mbetur */
+    padding: 20px;
+    background-color: #f4f4f4; /* Ngjyra e sfondit të përmbajtjes */
+}
+
+footer {
+    background-color: #333; /* Ngjyra e sfondit të footer-it */
+    color: white; /* Ngjyra e tekstit në footer */
+    text-align: center; /* Qendron në qendër */
+    padding: 10px 0; /* Hapësira brenda footer-it */
+}
+header {
+    background-color: #333; /* Ngjyra e sfondit të header-it */
+    color: white; /* Ngjyra e tekstit në header */
+    padding: 10px; /* Hapësira brenda header-it */
+}
+
+main {
+    flex: 1; /* Kjo do ta bëjë këtë div të zërë hapësirën e mbetur */
+    padding: 20px; /* Hapësira brenda main */
+    background-color: #f4f4f4; /* Ngjyra e sfondit të përmbajtjes */
+}
+
+.card {
+    background-color: white; /* Ngjyra e sfondit të kartave */
+    border-radius: 8px; /* Rrumbullakosja e skajeve */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hije për kartat */
+    margin: 20px 0; /* Hapësira mes kartave */
+    padding: 15px; /* Hapësira brenda kartave */
+}
+
+.post {
+    margin-bottom: 15px; /* Hapësira në fund të çdo postimi */
+}
+
+.post h3 {
+    color: #333; /* Ngjyra e titujve të postimeve */
+}
+
+.post p {
+    color: #666; /* Ngjyra e përmbajtjes së postimeve */
+}
+
+.btn {
+    display: inline-block; /* Bëhet që butoni të funksionojë si një bllok */
+    background-color: #5cb85c; /* Ngjyra e sfondit të butonit */
+    color: white; /* Ngjyra e tekstit të butonit */
+    padding: 10px 15px; /* Hapësira brenda butonit */
+    border: none; /* Hiq kufirin */
+    border-radius: 5px; /* Rrumbullakosja e skajeve të butonit */
+    text-decoration: none; /* Hiq nënvizimin nga lidhja */
+}
+
+.btn:hover {
+    background-color: #4cae4c; /* Ngjyra e butonit kur lihet mbi të */
+}
+
+footer {
+    background-color: #333; /* Ngjyra e sfondit të footer-it */
+    color: white; /* Ngjyra e tekstit në footer */
+    text-align: center; /* Qendron në qendër */
+    padding: 10px 0; /* Hapësira brenda footer-it */
+}
+
+header {
+    background-color: #333; /* Ngjyra e sfondit të header-it */
+    color: white; /* Ngjyra e tekstit në header */
+    padding: 10px; /* Hapësira brenda header-it */
+}
+
+main {
+    flex: 1; /* Kjo do ta bëjë këtë div të zërë hapësirën e mbetur */
+    padding: 20px; /* Hapësira brenda main */
+    background-color: #f4f4f4; /* Ngjyra e sfondit të përmbajtjes */
+}
+
+.card {
+    background-color: white; /* Ngjyra e sfondit të kartave */
+    border-radius: 8px; /* Rrumbullakosja e skajeve */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hije për kartat */
+    margin: 20px 0; /* Hapësira mes kartave */
+    padding: 15px; /* Hapësira brenda kartave */
+}
+
+h2 {
+    color: #333; /* Ngjyra e titujve të settings */
+}
+
+label {
+    display: block; /* Bëni që etiketat të shfaqen si bllok */
+    margin: 10px 0 5px; /* Hapësira mes etiketave dhe inputeve */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%; /* Bëni që inputet të mbulojnë hapësirën e disponueshme */
+    padding: 10px; /* Hapësira brenda inputeve */
+    border: 1px solid #ccc; /* Kufiri i inputeve */
+    border-radius: 4px; /* Rrumbullakosja e skajeve */
+    margin-bottom: 15px; /* Hapësira poshtë inputeve */
+}
+
+button {
+    background-color: #007bff; /* Ngjyra e sfondit të butonit */
+    color: white; /* Ngjyra e tekstit të butonit */
+    padding: 10px 15px; /* Hapësira brenda butonit */
+    border: none; /* Hiq kufirin */
+    border-radius: 5px; /* Rrumbullakosja e skajeve të butonit */
+    cursor: pointer; /* Ndrysho kursorin kur kalon mbi butonin */
+}
+
+button:hover {
+    background-color: #0056b3; /* Ngjyra e butonit kur lihet mbi të */
+}
+
+footer {
+    background-color: #333; /* Ngjyra e sfondit të footer-it */
+    color: white; /* Ngjyra e tekstit në footer */
+    text-align: center; /* Qendron në qendër */
+    padding: 10px 0; /* Hapësira brenda footer-it */
+}

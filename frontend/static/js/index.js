@@ -1,4 +1,6 @@
-import Dashboard from './views/Dashboard.js'; // Sigurohu që kjo është e saktë
+import Dashboard from './views/Dashboard.js'; 
+import Posts from './views/Posts.js'; 
+import Settings from './views/Settings.js'
 
 const navigateTo = (url) => {
     history.pushState(null, null, url);
@@ -8,7 +10,10 @@ const navigateTo = (url) => {
 const router = async () => {
     const routes = [
         { path: "/", view: Dashboard },
-        // Mund të shtoni më shumë rrugë këtu
+        { path: "/posts", view: Posts },
+        { path: "/settings", view: Settings },
+
+
     ];
 
     const potentialMatches = routes.map(route => {
@@ -41,5 +46,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    router(); // Kthe në fillim
+    router(); 
 });
